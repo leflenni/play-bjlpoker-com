@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leflenni.github.io/play-bjlpoker-com/sitemap.xml

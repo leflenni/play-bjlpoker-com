@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于百家乐 · 玩法与思路</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f7f3;
+            font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1f2a3a;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 720px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 40px;
+            padding: 3rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 8px 24px rgba(0,0,0,0.04);
+            transition: all 0.2s ease;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .page {
+                padding: 2rem 1.2rem;
+                border-radius: 28px;
+            }
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #0c1a2b;
+            margin-bottom: 0.25rem;
+            line-height: 1.2;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #5c6b7a;
+            margin-bottom: 2.4rem;
+            border-bottom: 1px solid #e8e5de;
+            padding-bottom: 1.2rem;
+            font-weight: 350;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 450;
+            margin: 2.2rem 0 1rem 0;
+            color: #1d2b3a;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 1.8rem;
+            margin-bottom: 0.6rem;
+            color: #2a3b4e;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #2e3a48;
+        }
+
+        a {
+            color: #206a5d;
+            text-decoration: none;
+            border-bottom: 1px solid #c0d6cf;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        a:hover {
+            color: #124e43;
+            border-bottom-color: #206a5d;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.8rem 0 1.2rem;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+            background: #f6f4ef;
+            border-radius: 24px;
+            padding: 1.2rem 1rem 1rem;
+            transition: background 0.15s;
+        }
+
+        .feature-item strong {
+            display: block;
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+            color: #1b2a38;
+        }
+
+        .feature-item span {
+            font-size: 0.9rem;
+            color: #3f5062;
+        }
+
+        .tip-card {
+            background: #f0f2ea;
+            border-radius: 28px;
+            padding: 1.5rem 1.6rem;
+            margin: 2rem 0 1.2rem;
+            border-left: 4px solid #86a59b;
+        }
+
+        .tip-card p {
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .faq-mini {
+            margin-top: 2.6rem;
+            border-top: 1px solid #e2ded5;
+            padding-top: 1.4rem;
+        }
+
+        .faq-mini dt {
+            font-weight: 500;
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            color: #1f2d3a;
+        }
+
+        .faq-mini dd {
+            margin-left: 0;
+            color: #415161;
+            font-size: 0.95rem;
+        }
+
+        .access-note {
+            font-size: 0.9rem;
+            color: #5b6a78;
+            background: #f4f2ec;
+            border-radius: 40px;
+            padding: 0.8rem 1.4rem;
+            margin: 2rem 0 0.2rem;
+            display: inline-block;
+        }
+
+        .footer-note {
+            margin-top: 2.4rem;
+            font-size: 0.85rem;
+            color: #7b8895;
+            text-align: center;
+            border-top: 1px solid #e5dfd5;
+            padding-top: 1.4rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e5dfd5;
+            margin: 2rem 0;
+        }
+
+        .strong-link {
+            font-weight: 450;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>百家乐 · 牌桌的节奏</h1>
+    <div class="subhead">一种常见的纸牌比较游戏，更关注选择与节奏</div>
+
+    <p>
+        在众多纸牌游戏中，<a href="https://play-bjlpoker.com" class="strong-link">百家乐</a> 因其简洁的规则和独特的对局节奏而受到关注。玩家无需复杂决策，只需在庄、闲、和三种结果中选择其一，剩下的交由发牌规则。这种“少即是多”的结构，反而让人们更专注于观察、判断与耐心。
+    </p>
+
+    <h2>核心亮点</h2>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <strong>极简规则</strong>
+            <span>每局只有两方比较点数，无需记忆复杂牌型。</span>
+        </div>
+        <div class="feature-item">
+            <strong>节奏平稳</strong>
+            <span>牌局流程固定，适合喜欢清晰进程的参与者。</span>
+        </div>
+        <div class="feature-item">
+            <strong>选择聚焦</strong>
+            <span>注意力集中在趋势与分配上，而非操作速度。</span>
+        </div>
+    </div>
+
+    <h2>使用场景与建议</h2>
+    <p>
+        无论你是初次接触这类游戏，还是希望换一种思考方式，<a href="https://play-bjlpoker.com">百家乐</a> 都提供了一种相对低干扰的体验。建议在熟悉基本补牌规则后，先以少量尝试为主，感受不同局面下选择的差异。心态上，把它当作一种观察与概率的练习，比追求单次结果更有意义。
+    </p>
+
+    <div class="tip-card">
+        <p><strong>一点提醒：</strong> 不要试图用短期结果归纳必然规律。任何一局都是独立事件，保持节奏比猜测下一局更重要。</p>
+    </div>
+
+    <h2>常见问题摘要</h2>
+    <dl class="faq-mini">
+        <dt>百家乐和二十一点有什么不同？</dt>
+        <dd>百家乐中玩家几乎不需要做战术决策（例如要不要牌），所有动作由固定规则执行，更偏向选择与观察。</dd>
+        <dt>补牌规则复杂吗？</dt>
+        <dd>对于庄闲两方，补牌条件由固定图表决定。初学只需了解基本逻辑，不必强记，很多平台会自动处理。</dd>
+        <dt>如何开始体验？</dt>
+        <dd>找到你信任的在线平台，注册后选择最低限额的桌台，先观察几局再下注。保持冷静，循序渐进。</dd>
+    </dl>
+
+    <hr>
+
+    <p>
+        如果你想进一步了解或直接尝试，可以前往 <a href="https://play-bjlpoker.com">百家乐</a> 的相关页面，那里提供了更详细的规则说明与实时的牌桌环境。请始终根据自己的认知与资金情况做出判断，保持适度的参与感。
+    </p>
+
+    <div class="access-note">
+        ⚡ 请合理分配时间与精力，避免过度沉浸。
+    </div>
+
+    <div class="footer-note">
+        内容仅供信息参考 · 选择与判断基于个人偏好
+    </div>
+</div>
+</body>
+</html>
